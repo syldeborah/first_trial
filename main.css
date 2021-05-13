@@ -1,0 +1,58 @@
+:root {
+    --green: #b6dcb6;
+    --white: #ffffff;
+    --black: #000000;
+}
+.light-theme {
+    color: #000000; /* OK, but kenapa ga ada effectnya? */
+    --bg: var(--green);
+    --fontColor: var (--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--green);
+}
+
+* { /* * Is a universal lol */
+    color: var(--fontColor);
+    font-family: Gill Sans;
+}
+
+.btn {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus{
+    outline-style: none;
+}
+
+body {
+    background: var(--bg);
+}
+ul {
+    font-family: helvetica;
+}
+li {
+    list-style: circle;
+}
+.list {
+    list-style: square;
+}
+
+#msg {
+    font-family: 'Times New Roman';
+}
+
+
+
